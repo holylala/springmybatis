@@ -85,7 +85,7 @@
 					</div>					
 					<div class="submit" style="margin-top: 22px; ">
 						<span class="smallbutton"><a id="postcontent" href="javascript:fetchForm.submit();">提取IP</a></span>&nbsp;&nbsp;
-						<a href="${domain }help/" target="_blank">我提取的代理都能用吗，能用多久？</a>
+						<a href="${domain }help.html" target="_blank">我提取的代理都能用吗，能用多久？</a>
 					</div>
 				</form>		
 				

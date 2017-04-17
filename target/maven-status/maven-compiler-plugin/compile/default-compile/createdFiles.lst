@@ -1,3 +1,10 @@
+com\holylala\springmybatis\common\PageParam.class
+com\holylala\springmybatis\service\TableIpService.class
+com\holylala\springmybatis\entity\TableIp.class
 com\holylala\springmybatis\controller\IndexController.class
 com\holylala\springmybatis\controller\FetchController.class
+com\holylala\springmybatis\common\XssFilter.class
 com\holylala\springmybatis\controller\HelpController.class
+com\holylala\springmybatis\common\XssHttpServletRequestWraper.class
+com\holylala\springmybatis\entity\User.class
+com\holylala\springmybatis\dao\ITableIpDao.class

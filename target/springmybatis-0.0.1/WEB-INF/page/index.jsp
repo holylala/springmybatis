@@ -1,3 +1,4 @@
+<%@page import="com.holylala.springmybatis.common.PageParam"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -21,7 +22,7 @@
 				<h1 class="site-title">
 					<a class="home-link" href="${domain }" title="代理IP提取系统" rel="home">代理IP提取系统</a>
 				</h1>
-				<h2 class="site-description" id="site-description">最便宜、最稳定、实时更新、API接口、实用软件</h2>
+				<h2 class="site-description" id="site-description">${content1},${content2}</h2>
 			</div>
 			<div class="clear"></div>
 		</header>
@@ -95,6 +96,19 @@
 					<p class="message">注：表中响应速度是中国测速服务器的测试数据，仅供参考。响应速度根据你机器所在的地理位置不同而有差异。</p>
 					<div class="wp-pagenavi">
 						<span>第</span>
+						<%
+						
+							PageParam pageParam = (PageParam)request.getAttribute("pageParam");
+							int currPage = pageParam.getCurrPage();
+							int totalPage = pageParam.getTotalPage();
+							for(int i = 1; i <= totalPage; i ++){
+								if(i == currPage){
+									%><span class="current"><%=currPage %></span><%
+								}else{
+									%><a href="index.html?page=<%=i %>"><%=i %></a><%
+								}
+							}
+						%>
 						<span>页</span>
 					</div>
 				</div>
